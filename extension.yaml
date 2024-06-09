@@ -1,0 +1,16 @@
+name: hello-world-extension
+version: v1.0.0
+description: A simple Rancher extension that displays 'Hello World'.
+icon: https://example.com/icon.png
+homepage: https://github.com/SergeyLabanovskiy/hello-world-extension
+maintainers:
+  - name: Sergey Labanovskiy
+    email: your-email@example.com
+  - name: Rancher Labs
+    email: support@rancher.com
+charts:
+  - name: hello-world-extension
+    description: A simple Rancher extension that displays 'Hello World'.
+    version: v1.0.0
+    urls:
+      - https://github.com/SergeyLabanovskiy/hello-world-extension/releases/download/v1.0.0/hello-world-extension-1.0.0.tgz
