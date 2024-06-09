@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hello-world-extension
+  labels:
+    app: hello-world-extension
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: hello-world-extension
+  template:
+    metadata:
+      labels:
+        app: hello-world-extension
+    spec:
+      containers:
+        - name: hello-world-extension
+          image: busybox
+          command: ['sh', '-c', 'echo Hello World && sleep 3600']
